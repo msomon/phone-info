@@ -1,12 +1,23 @@
 
 h1{width: 25%;
   margin: auto;
-}.card{border: 2px solid tomato;
+}
+
+#search-phone{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.card{border: 2px solid blue;
   margin: 10px;
   padding: 20px;
   border-radius: 10px;
 }
-#search-phone{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+
+.phone-detail{border: 2px solid green;
+  margin-top: 145px;
+  padding: 30px;
+  border-radius: 10px;
+}
+.image{
+  margin-bottom: 15px;
 }
