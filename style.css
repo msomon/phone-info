@@ -1,4 +1,12 @@
-.card{margin-top: 10px;
-  
-align-items: center;
+
+h1{width: 25%;
+  margin: auto;
+}.card{border: 2px solid tomato;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+#search-phone{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
