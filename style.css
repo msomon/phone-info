@@ -7,7 +7,11 @@ h1{width: 25%;
   margin-top: 10px;
   color:rebeccapurple;
 }
-
+.input{
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
 #search-phone{
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -17,6 +21,18 @@ h1{width: 25%;
   padding: 20px;
   border-radius: 10px;
 }
+.detail-btn{
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: blue;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  /* height: 40px;
+  width: 250px; */
+}
 #see-more{
   margin-top: 40px;
   margin-bottom: 20px;
@@ -24,36 +40,47 @@ h1{width: 25%;
 }
 
 .phone-detail{border: 2px solid green;
-  margin-top: 145px;
-  padding: 30px;
+  margin-top: 50px;
+  padding: 50px;
   border-radius: 10px;
+  margin-left: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .image{
   margin-bottom: 15px;
 }
+    /* responsive  */
+    
 @media (max-width:570px){
   
+  body{
+    overflow-x: hidden;
+  }
   h1{
     font-size: 40px;
   }
   .input{
+    width: 450px;
     margin-left: 5px;
     margin-right: 15px;
   }
   #search-phone{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    width: 465px;
   }
   #see-more{
     margin-top: 10px;
-    margin-left: 0px;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-bottom: 30px;
+    width: 350px;
   }
   .phone-detail{
     margin-top: 15px;
-    padding: 30px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
+    width: 450px;
   }
 }

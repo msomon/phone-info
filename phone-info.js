@@ -26,10 +26,10 @@ const loadData =(phones)=>{
     // console.log(phone.slug)
       const div = document.createElement('div');
       div.classList.add('card')
-      div.innerHTML=`<img class="w-50" src="${phone.image}" alt="">
+      div.innerHTML=`<img class="w-50 mb-3" src="${phone.image}" alt="">
       <h4>Name:${phone.phone_name}</h4>
       <h4>Brand:${phone.brand}</h4>
-      <button onclick="collectData('${phone.slug}')" class="btn btn-primary">Detail</button>
+      <a class="detail-btn" onclick="collectData('${phone.slug}')" href="#phone-detail">Detail</a>
       `
       showingData.appendChild(div) 
   }
@@ -50,7 +50,7 @@ document.getElementById('see-more').addEventListener('click',function(){
       div.innerHTML=`<img class="w-50" src="${phone.image}" alt="">
       <h4>Name:${phone.phone_name}</h4>
       <h4>Brand:${phone.brand}</h4>
-      <button onclick="collectData('${phone.slug}')" class="btn btn-primary">Detail</button>
+      <a class="detail-btn" onclick="collectData('${phone.slug}')" href="#phone-detail">Detail</a>
       `
       showingData.appendChild(div) 
   }
@@ -89,5 +89,3 @@ div.innerHTML=`
 `
 phoneDetail.appendChild(div)
 }
-
-
