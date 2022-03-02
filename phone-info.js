@@ -70,7 +70,7 @@ const collectData = phoneId =>{
 const displayData =(detail)=>{
   console.log(detail);
 const phoneDetail = document.getElementById('phone-detail');
-phoneDetail.textContent=''
+// phoneDetail.textContent=''
 const div = document.createElement('div')
 div.classList.add('phone-detail')
 div.innerHTML=`
