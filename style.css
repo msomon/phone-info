@@ -8,8 +8,8 @@ h1{width: 25%;
   color:rebeccapurple;
 }
 .input{
-  width: 50%;
-  align-items: center;
+  width: 75%;
+  /* align-items: center; */
   justify-content: center;
 }
 #search-phone{
@@ -51,6 +51,8 @@ h1{width: 25%;
 .image{
   margin-bottom: 15px;
 }
+
+
     /* responsive  */
     
 @media (max-width:510px){

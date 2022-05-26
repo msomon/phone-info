@@ -68,7 +68,8 @@ const collectData = phoneId =>{
 }
 
 const displayData =(detail)=>{
-  console.log(detail);
+  // console.log(detail.mainFeatures); 
+  
 const phoneDetail = document.getElementById('phone-detail');
 // phoneDetail.textContent=''
 const div = document.createElement('div')
@@ -82,10 +83,7 @@ div.innerHTML=`
 <h4>Chipset:${detail.mainFeatures.chipSet}</h4>
 <h4>Displaysize:${detail.mainFeatures.displaySize}</h4>
 <h4>Sesor:${detail.mainFeatures.sensors}</h4>
-<h4>Bluetooth:${detail.others.Bluetooth}</h4>
-<h4>USB:${detail.others.USB}</h4>
-<h4>Gps:${detail.others.GPS}</h4>
-<h4>WLAN:${detail.others.WLAN}</h4>
 `
 phoneDetail.appendChild(div)
 }
+ 
